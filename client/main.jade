@@ -1,9 +1,12 @@
 head
-  title etherisk-meteor
+  title Etherisk
 
 body
-  h1 Welcome to Meteor!
+  +status
   +hello
+
+template(name='status')
+  p Using account {{account}}
 
 template(name='hello')
   button Click Me
