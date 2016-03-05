@@ -3,11 +3,13 @@ head
 
 body
   +status
-  +hello
 
 template(name='status')
-  p Using account {{account}}
-
-template(name='hello')
-  button Click Me
-  p You've pressed the button {{counter}} times.
+  form
+    input(type="text", value=contractAddress, width="50")
+    button update
+  p Using account {{acct}}
+  +if acct
+    p Great!
+  else
+    p Please choose an account

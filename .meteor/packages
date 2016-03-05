@@ -27,3 +27,4 @@ ethereum:blocks
 frozeman:template-var
 mquandalle:jade
 stylus
+raix:handlebar-helpers
